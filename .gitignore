@@ -1,0 +1,76 @@
+# Created by venv; see https://docs.python.org/3/library/venv.html
+# Sistema Operacional
+# Ignora arquivos do macOS
+.DS_Store
+
+# Ignora arquivos do Windows
+Thumbs.db
+ehthumbs.db
+
+# Editor de Texto
+# Ignora arquivos de configuração do editor VSCode
+.vscode/
+
+# Ignora arquivos de configuração do IntelliJ IDEA
+.idea/
+
+# Ignora arquivos temporários do Sublime Text
+.sublime-workspace
+.sublime-project
+
+# Ignora arquivos temporários do Vim
+*.swp
+
+# Ignora arquivos temporários do Emacs
+*~
+.#*
+
+# Node.js
+# Ignora dependências do Node.js
+node_modules/
+
+# Ignora arquivos de lock do npm (em alguns casos você pode querer manter o package-lock.json)
+package-lock.json
+yarn.lock
+
+# Python
+# Ignora arquivos do Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+env/
+venv/
+ENV/
+
+# Ambiente virtual do Python
+*.env
+*.venv
+
+# Java
+# Ignora arquivos do Java
+*.class
+*.jar
+*.war
+*.ear
+target/
+build/
+
+# Outros
+# Ignora arquivos temporários de backup
+*~ 
+*.bak
+*.tmp
+
+# Ignora arquivos de log
+*.log
+
+# Ignora arquivos de banco de dados SQLite
+*.sqlite
+*.sqlite3
+
+# Ignora arquivos de configuração do sistema
+*.sublime-*
+*.idea
+
+
