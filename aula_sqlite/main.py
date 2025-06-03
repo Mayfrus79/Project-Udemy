@@ -16,11 +16,22 @@ cursor.execute(
     f'CREATE TABLE IF NOT EXISTS {TABLE_NAME}'
     '('
     'id INTEGER PRIMARY KEY AUTOINCREMENT,'  # auto-incrementing unique ID
-    'name TEXT,'                             # customer's name as text
+    'name TEXT UNIQUE,'                             # customer's name as text
     'weight REAL'                            # customer's weight as a decimal number
     ')'
 )
 # Save the changes
+connection.commit()
+
+sql = (
+    f'INSERT OR REPLACE INTO {TABLE_NAME} '
+    '(name, weight) '
+    'VALUES '
+    '(?,?)'
+)
+
+# cursor.execute(sql, ["Maykon", 93])
+cursor.executemany(sql, [['Maykon', 93], ['Cibele', 42], ['Magno', 80], ['Maira', 45]])
 connection.commit()
 
 # Close the connection
